@@ -85,7 +85,7 @@ body {
    justify-content: center;
    align-items: center;
    min-height: 100vh;
-   margin: 1rem;
+   margin: 1.5rem;
    
   
 }
@@ -94,10 +94,10 @@ body {
   display: flex;
   justify-content: flex-start;
   align-items: center; 
-    gap: 1.125rem;
+  gap: 1.125rem;
 }
 .product-card {
-  --content-padding:2rem;
+  --content-padding:1.5rem;
   --content-spacing:1rem;
 
   background: var(--White);
@@ -105,11 +105,25 @@ body {
   overflow: hidden;
   display:grid ;
   max-width: 600px;
+ 
+}
+.product-image {
+   height: 240px;
+   overflow: hidden;
+}
+.product-image img {
+  object-fit:cover;
+  width: 100%;
+  height: 100%;
+
 }
 @media (min-width:600px){
   .product-card {
     grid-template-columns: 1fr 1fr;
   }
+  .product-image {
+   height: 100%;
+}
   
 }
 .content {
